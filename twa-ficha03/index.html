@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo TWA</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Catálogo de Productos</h1>
+        <div class="controls">
+          <input type="text" id="search" placeholder="Buscar por nombre o tag..." />
+          <select id="category-select">
+            <option value="">Todas las categorías</option>
+          </select>
+          <button id="sort-btn">Ordenar por Precio: Desc</button>
+        </div>
+      </header>
+
+      <main class="content-layout">
+        <ul id="list"></ul>
+        <section id="detail">
+          <p>Selecciona un elemento para ver los detalles.</p>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
