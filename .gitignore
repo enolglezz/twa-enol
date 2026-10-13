@@ -1,3 +1,16 @@
+# Dependencias
 node_modules/
+
+# Entornos y compilaciones de Vite
 dist/
-.env
+.vite/
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Informes locales de pruebas o logs
+*.log
+report.json
