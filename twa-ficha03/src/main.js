@@ -36,13 +36,6 @@ async function loadData() {
   }
 }
 
-// Función pura auxiliar para ordenar por precio según la dirección (dir: 'asc' | 'desc')
-const sortByPrice = (list, dir) => {
-  return [...list].toSorted((a, b) => {
-    return dir === 'asc' ? a.price - b.price : b.price - a.price;
-  });
-};
-
 // 2. Función render() principal — Sin usar innerHTML con los datos
 function render() {
   // Limpiar contenedores de forma segura

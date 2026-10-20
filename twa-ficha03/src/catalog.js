@@ -30,3 +30,8 @@ export const withDiscount = (list, pct) =>
     price: item.price * (1 - pct / 100)
   }));
 
+  export const sortByPrice = (list, dir = 'desc') => {
+  return [...list].toSorted((a, b) => {
+    return dir === 'asc' ? a.price - b.price : b.price - a.price;
+  });
+};
